@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hybrid_App_Back_Demo</string>
+    <string name="change2WebWrapperFragment">显示 web 页面</string>
+    <string name="normal_fragment">这是 Normal Fragment 页面</string>
+</resources>

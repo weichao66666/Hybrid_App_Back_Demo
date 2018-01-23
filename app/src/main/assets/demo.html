@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script type="text/javascript" src="demo.js"></script>
+    <script type="text/javascript">
+        function exitConfirm(){
+            window.javaInterface.removeBack("web_wrapper");
+            var r = confirm("是否退出？");
+            if (r == true) {
+    //          if(window.javaInterface && window.javaInterface.resetBack){
+                    window.javaInterface.exit();
+    //          }
+            } else {
+    //          if(window.javaInterface && window.javaInterface.back){
+                    window.javaInterface.back("web_wrapper");
+    //          }
+            }
+        }
+    </script>
+</head>
+<body>
+这是 WebWrapper Fgment 页面<br/>
+<input type="button" id="web_wrapper_back" onclick="exitConfirm()" value="后退到 Normal Fragment 页面"/>
+</body>
+</html>
